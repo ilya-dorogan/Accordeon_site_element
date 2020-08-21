@@ -1,0 +1,42 @@
+@import "reset.css";
+
+.accordion__name {
+	font-size: 24px;
+	text-align: center;
+}
+
+.accordion__item {
+	font-size: 24px;
+	position: relative;
+	padding-bottom: 20px;
+
+}
+
+.accordion__item-input {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.accordion__item-trigger {
+	display: block;
+	padding: 20px;
+	border: 1px solid black;
+}
+
+.accordion__item-content {
+	padding: 20px;
+	border: 1px solid black;
+	border-top: none;
+	display: none;
+}
+
+.accordion__item-input:checked~.accordion__item-trigger {
+	background-color: #eee;
+}
+
+.accordion__item-input:checked~.accordion__item-content {
+	display: block;
+	background-color: #eee;
+}
